@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"Usuario ou senha incorretos!", Toast.LENGTH_LONG).show();
         }
 
-
+        finish();
 
 
     }
