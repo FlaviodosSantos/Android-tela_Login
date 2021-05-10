@@ -28,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
         if(user.getText().toString().equals("admin") && password.getText().toString().equals("12345")){
             Intent it = new Intent(this, MainActivity2.class);
             startActivity(it);
+            finish();
         }else {
             Toast.makeText(this,"Usuario ou senha incorretos!", Toast.LENGTH_LONG).show();
         }
 
-        finish();
+        //finish();   era o que tava causando o bug
 
 
     }
